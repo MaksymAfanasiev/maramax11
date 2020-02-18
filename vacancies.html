@@ -3,27 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>New Page</title>
-        <meta name="theme-color" content="#c9e0e04d">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <title>Contact</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="../img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="../img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="../img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="../img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="../img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="../img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="../img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="../img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="../img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="../img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="../img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="../img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="../img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="../img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="../img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="../styles/main.min.css">
+        <link rel="stylesheet" href="styles/main.min.css">
+        <link rel="stylesheet" href="styles/contact.min.css">
     </head>
     <body>
         <header class="header">
@@ -47,7 +30,7 @@
         </a>
       </li>
       <li class="section-navigation__item">
-        <a href="./contact.html" class="section-navigation__link link active">
+        <a href="./contact.html" class="section-navigation__link link">
           Контакти
         </a>
       </li>
@@ -153,7 +136,56 @@
   </div>
 </header>
 
-        <h1>New Page</h1>
+
+        <main class="main">
+            <section class="intro">
+                <div class="container">
+                    <h1 class="section-title main-title">
+                        Контакты
+                    </h1>
+
+                    <div class="cards">
+                        <div class="card">
+                            <h2 class="card-title">
+                                Логістика
+                            </h2>
+                            <a href="mailto:o.nesterchuk@maramax.kiev.ua" class="card-link">
+                                o.nesterchuk@maramax.kiev.ua
+                            </a>
+                            <p class="card-tel">
+                                +38 (063) 030-58-58
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h2 class="card-title">
+                                Бухгалтерія
+                            </h2>
+                            <a href="mailto:o.nesterchuk@maramax.kiev.ua" class="card-link">
+                                o.nesterchuk@maramax.kiev.ua
+                            </a>
+                            <p class="card-tel">
+                                +38 (044) 276-25-25
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h2 class="card-title">
+                                Комерційний відділ
+                            </h2>
+                            <a href="mailto: m.kysilov@maramax.kiev.ua" class="card-link">
+                                m.kysilov@maramax.kiev.ua
+                            </a>
+                            <p class="card-tel">
+                                +38 (063) 030-58-58
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
         <footer class="footer">
   
   <section class="section-about-us">
@@ -212,7 +244,64 @@
     </div>
   </section>
 </footer>
-        <script src="../js/pageB.min.js"></script>
-        <script src="../js/vendor.min.js"></script>
+        <div class="modal" id="form-modal">
+  <div class="modal__overlay"></div>
+  <div class="modal__content">
+    <div class="modal__inner">
+      <button class="modal__close"></button>
+      <h2 class="section-title">
+        Що вас цiкавить ?
+      </h2>
+      <h3 class="section-subtitle">
+        Залиште заявку, ми з Вами зв'яжемося
+      </h3>
+      <form action="" class="form">
+        <div class="form__row">
+          <input class="form-input" id="form-name" name="name" type="text" required>
+          <label class="form-label" for="form-name"><span class="form-label--required">*</span> Введіть ваше ім'я</label class="form-label">
+        </div>
+        <div class="form__row">
+          <input class="form-input" id="form-email" name="email" type="email" required>
+          <label class="form-label" for="form-email"><span class="form-label--required">*</span> Введіть ваш Email</label>
+        </div>
+        <div class="form__row">
+          <input class="form-input js-form-tel" id="form-tel" name="tel" type="text" required>
+          <label class="form-label" for="form-tel"><span class="form-label--required">*</span> +3 8 0</label>
+        </div>
+        <div class="form__row form__row--select">
+          <select class="form-select" name="quantity" id="form-quantity">
+            <option class="form-option" value="" hidden>
+              
+            </option>
+            <option class="form-option" value="1">
+              1
+            </option>
+            <option class="form-option" value="2">
+              2
+            </option class="form-option">
+            <option class="form-option" value="3">
+              3
+            </option>
+            <option class="form-option" value="4">
+              4
+            </option>
+          </select>
+          <label class="form-label" for="form-quantity">Кількість одиниць</label>
+        </div>
+        <div class="form__row form__row--textarea">
+          <textarea class="form-textarea" name="message" id="form-message"></textarea>
+          <label class="form-label form-label--custom" for="form-message">Введіть ваше повідомлення</label>
+        </div>
+        <div class="form__row form__row--submit">
+          <button type="submit" class="form-submit">
+            Відправити запит
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+        <script src="js/main.min.js"></script>
+        <script src="js/vendor.min.js"></script>
     </body>
 </html>
